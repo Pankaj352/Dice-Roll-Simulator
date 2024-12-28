@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: antiquewhite;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem;
+  letter-spacing: normal;
+}
+.dice-box{
+  position: relative;
+  height: 30vh;
+}
+.dice {
+  font-size: 7rem;
+  margin:8rem 5px;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.roll-animation{
+  animation-name:roll;
+
+}
+
+@keyframes roll {
+  0%{
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  100%{
+    transform: rotateY(720deg) rotateX(720deg);
+  }
+}
+
+button {
+  background-color: #a4bda5;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.4s ease;
+  color: #fff;
+  font-weight: 500;
+  font-size: large;
+}
+
+button:hover {
+  background-color: #8b9467;
+}
+
+ul {
+  list-style: 1.5rem;
+  padding: 0;
+  margin: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+
+}
+
+li{
+  font-size: 1.5rem;
+  padding: .5rem;
+  margin: .8rem;
+  background-color: #f2f2f2;
+  border-radius: .5rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span{
+  font-size: 3rem;
+  margin-right: 1rem;
+}
